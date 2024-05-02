@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Store Website</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+section nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px #089da1;
+    background: #fff;
+    background-image:  linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), align-items=center, ("https://drive.google.com/uc?export=view&id=1rl7i63NBuhoY3McenHW165KI-8GlMEf_");
+    position: fixed;
+    left: 0;
+    z-index: 100;
+}
+
+section nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+section nav li a{
+    text-decoration: none;
+    color: #000;
+}
+
+section nav li a:hover{
+    color: #089da1;
+}
+
+section nav .social_icon i{
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+section nav .social_icon i:hover{
+    color: #089da1;
+    cursor: pointer;
+}
+
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 10%;
+}
+
+section .main h1{
+    position: relative;
+    font-size: 55px;
+    top: 80px;
+    left: 25px;
+}
+
+section .main h1 span{
+    color: #089da1;
+}
+
+section .main p{
+    width: 650px;
+    text-align: justify;
+    line-height: 22px;
+    position: relative;
+    top: 125px;
+    left: 25px;
+}
+
+section .main .main_tag .main_btn{
+    background: #089da1;
+    padding: 10px 20px;
+    position: relative;
+    top: 200px;
+    left: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+section .main .main_img img{
+    width: 780px;
+    position: relative;
+    top: 90px;
+    left: 20px;
+}
+
+
+
+
+/*services*/
+
+.services{
+    width: 100%;
+    height: auto;
+    margin: 35px 0;
+}
+
+.services .services_box{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.services .services_box .services_card{
+    text-align: center;
+    width: 310px;
+    height: auto;
+    box-shadow: 0 0 8px #089da1;
+    padding: 15px 10px;
+}
+
+.services .services_box .services_card i{
+    color: #089da1;
+    font-size: 45px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.services .services_box .services_card h3{
+    margin-bottom: 10px;
+}
+
+
+
+
+/*about*/
+
+.about{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about1{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .about_image img{
+    width: 800px;
+}
+
+.about .about_tag h1{
+    font-size: 50px;
+    position: relative;
+    bottom: 35px;
+}
+
+
+.about .about_tag p{
+    line-height: 22px;
+    width: 650px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.about1 .about_tag p{
+    line-height: 22px;
+    width: 650px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+.about .about_tag .about_btn{
+    padding: 10px 20px;
+    background: #089da1;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    top: 50px;
+}
+
+
+
+/*Books*/
+
+.featured_boks{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+}
+
+.featured_boks h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+
+.featured_boks .featured_book_box{
+    width: 95%;
+    height: 60vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.featured_boks .featured_book_box .featured_book_card{
+    width: 250px;
+    height: 420px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #919191;
+    margin: auto 20px;
+}
+
+.featured_boks .featured_book_box .featured_book_card:hover{
+    box-shadow: 0 0 5px #089da1;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_img img{
+    width: 150px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag h2{
+    margin: 12px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .writer{
+    color: #919191;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .categories{
+    color: #089da1;
+    margin-top: 8px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .book_price{
+    margin-top: 8px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .book_price sub{
+    font-weight: 100;
+    padding: 0 5px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .f_btn{
+    padding: 8px 20px;
+    border: 2px solid #089da1;
+    text-decoration: none;
+    color: #000;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #089da1;
+    border-radius: 10px;
+}
+
+
+
+
+/*arrivals*/
+
+.arrivals{
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 35px;
+}
+
+.arrivals h1{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.arrivals .arrivals_box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 25px 0;
+}
+
+.arrivals .arrivals_box .arrivals_card{
+    width: 250px;
+    height: 340px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #919191;
+    margin: auto 20px;
+}
+
+.arrivals .arrivals_box .arrivals_card:hover{
+    box-shadow: 0 0 5px #089da1;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_image{
+    width: 150px;
+    height: 220px;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.arrivals .arrivals_box .arrivals_card:hover .arrivals_image img{
+    transform: scale(1.1);
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag p{
+    font-family: queen of camelot;
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .arrivals_icon{
+    color: #089da1;
+    margin-bottom: 18px;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .arrivals_btn{
+    padding: 8px 20px;
+    border: 2px solid #089da1;
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+/*reviews*/
+
+.reviews{
+    width: 100%;
+
+    height: 80vh;
+    margin-bottom: 35px;
+}
+
+.reviews h1{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 55px;
+}
+
+.reviews .review_box{
+    width: 95%;
+    height: 50vh;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews .review_box .review_card{
+    width: 400px;
+    height: 350px;
+    box-shadow: 0 0 8px #089da1;
+    padding: 15px;
+    margin: 0 12px;
+}
+
+.reviews .review_box .review_card i{
+    float: right;
+    font-size: 120px;
+    position: relative;
+    bottom: 20px;
+    color: #eaeaea;
+}
+
+.reviews .review_box .review_card .card_top img{
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.reviews .review_box .review_card .card p{
+    margin: 10px 0 10px 0;
+    text-align: justify;
+    line-height: 22px;
+}
+
+.reviews .review_box .review_card .card .review_icon i{
+    font-size: 16px;
+    float: left;
+    margin-top: 20px;
+    color: #089da1;
+    padding: 0 1px;
+}
+
+
+
+
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    background: #eaeaea;
+}
+
+footer .footer_main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer_main .tag{
+    margin: 10px 0;
+}
+
+footer .footer_main .tag img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+footer .footer_main .tag p{
+    width: 250px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+footer .footer_main .tag h1{
+    font-size: 25px;
+    margin: 25px 0;
+    color: #000;
+}
+
+footer .footer_main .tag a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+footer .footer_main .tag i{
+    margin-right: 10px;
+}
+
+footer .footer_main .tag .social_link i{
+    margin: 0 5px;
+}
+
+footer .footer_main .tag .search_bar{
+    width: 230px;
+    height: 30px;
+    background: rgba(202,202,202);
+    border-radius: 25px;
+}
+
+footer .footer_main .tag .search_bar input{
+    width: 200px;
+    padding: 2px 0;
+    position: relative;
+    top: 17%;
+    left: 6%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    background: none;
+}
+
+footer .footer_main .tag .search_bar button{
+    padding: 7px 15px;
+    background: #089da1;
+    border: none;
+    margin-top: 15px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: #000;
+}
+
+footer .end span{
+    color: #089da1;
+    margin-left: 10px;
+}
+
+
+
+
+.contact{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+    </style>
+  </head>
+  <body>
+    <section>
+      <nav>
+        <div class="logo">
+          <img src="https://drive.google.com/uc?export=view&id=1uv1ZksxS2R5JllFVlK4RJ0oBTuMYBO1j" />
+        </div>
+
+        <ul>
+          <li><a href="#homepage">Home</a></li>
+          <li><a href="#aboutpage">About</a></li>
+          <li><a href="#fdpage">Featured Books</a></li>
+          <li><a href="#napage">New Arrivals</a></li>
+          <li><a href="#contactpage">Contact</a></li>
+
+
+        </ul>
+
+        <div class="social_icon" >
+          <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+        </div>
+      </nav>
+
+      <div class="main">
+        <div class="main_tag" id="homepage">
+          <h1>WELCOME TO<br /><span>BOOK STORE</span></h1>
+
+          <p>
+            Welcome to BOOK STORE, your one-stop online destination for a world
+            of books. Explore our diverse collection of books, from bestsellers
+            to niche genres, all in one convenient place. With user-friendly
+            navigation, the latest releases, e-books, audiobooks, and exclusive
+            offers, we're here to make your reading journey seamless and
+            enjoyable. Join us in celebrating the magic of books and uncover the
+            stories that await you.
+          </p>
+          <a href="#homepage" class="main_btn">Learn More</a>
+        </div>
+
+        <div class="main_img">
+          <img src="https://d3t4nwcgmfrp9x.cloudfront.net/upload/the-10-best-business-books-of-2016.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!--Services-->
+
+    <div class="services">
+      <div class="services_box">
+        <div class="services_card">
+          <i class="fa-solid fa-truck-fast"></i>
+          <h3>Fast Delivery</h3>
+        </div>
+
+        <div class="services_card">
+          <i class="fa-solid fa-headset"></i>
+          <h3>24 x 7 Services</h3>
+        </div>
+
+        <div class="services_card">
+          <i class="fa-solid fa-tag"></i>
+          <h3>Best Deal</h3>
+        </div>
+
+        <div class="services_card">
+          <i class="fa-solid fa-lock"></i>
+          <h3>Secure Payment</h3>   
+        </div>
+      </div>
+    </div>
+
+    <!--About-->
+
+    <div class="about" id="aboutpage">
+      <div class="about_image">
+        <img src="https://drive.google.com/uc?export=view&id=1rl7i63NBuhoY3McenHW165KI-8GlMEf_" />
+      </div>
+      <div class="about_tag">
+        <h1>About Us</h1>
+        <p>
+          At Our Bookstore, we're more than just an online book
+          retailer. We're passionate about the written word and dedicated to
+          sharing that passion with readers around the world. Our mission is to
+          provide a curated selection of books that cater to diverse tastes,
+          ages, and interests. With a team of book enthusiasts behind the
+          scenes, we strive to bring you the best in literature and knowledge.
+          Founded on a love for reading, our commitment extends beyond selling
+          books. We're here to foster a community of book lovers, offering
+          recommendations, author insights, and a platform for book-related
+          discussions. Whether you're a seasoned bibliophile or just beginning
+          your reading journey, we're here to accompany you on your literary
+          adventures. Thank you for choosing [Your Bookstore Name] as your
+          trusted source for books. We look forward to being a part of your
+          reading story.
+        </p>
+        <a href="#" class="about_btn">Learn More</a>
+      </div>
+    </div>
+
+    <!--Books-->
+
+    <div class="featured_boks" id="fdpage">
+      <h1>Featured Books</h1>
+
+      <div class="featured_book_box">
+        <div class="featured_book_card">
+          <div class="featurde_book_img">
+            <img src="https://drive.google.com/uc?export=view&id=1P9lxGI5PX_dRve0zDkK3xqSHlqdxPFf-" />
+          </div>
+
+          <div class="featurde_book_tag">
+            <h2>KARMA</h2>
+            <p class="writer">Sadhguru</p>
+            <div class="categories">Spritual</div>
+            <p class="book_price">
+              <i class="bi bi-currency-rupee"></i> 192<sub
+                ><del><i class="bi bi-currency-rupee"></i>299</del></sub>
+              
+            </p>
+            <a href="https://amzn.eu/d/bajIsb9" class="f_btn">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="featured_book_card">
+          <div class="featurde_book_img">
+            <img src="https://drive.google.com/uc?export=view&id=1KkSNIsJSHFH6cldNdB18lyAdIAlC0Zwd" />
+          </div>
+
+          <div class="featurde_book_tag">
+            <h2>Do It Today</h2>
+            <p class="writer">Darius Foroux</p>
+            <div class="categories">self help</div>
+            <p class="book_price">
+              125<sub><del>199</del></sub>
+            </p>
+            <a href="https://amzn.eu/d/8OKsoXS" class="f_btn">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="featured_book_card">
+          <div class="featurde_book_img">
+            <img src="https://drive.google.com/uc?export=view&id=1CX4iVPKHtN7qQB13CCljkP8UvMDHOxhB"/>
+          </div>
+
+          <div class="featurde_book_tag">
+            <h2>Ikigai</h2>
+            <p class="writer">Francesc Miralles</p>
+            <div class="categories">Self help</div>
+            <p class="book_price">
+              315<sub><del>499</del></sub>
+            </p>
+            <a href="https://amzn.eu/d/3odV1cd" class="f_btn">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="featured_book_card">
+          <div class="featurde_book_img">
+            <img src="https://drive.google.com/uc?export=view&id=1OvHhfuOJKt2MuIHCV3tMqGe_J_vpB5kx">
+          </div>
+
+          <div class="featurde_book_tag">
+            <h2>Atomic Habits</h2>
+            <p class="writer">James Clear</p>
+            <div class="categories">Non Fiction</div>
+            <p class="book_price">
+              439<sub><del>599</del></sub>
+            </p>
+            <a href="https://amzn.eu/d/2mhcqAi" class="f_btn">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="featured_book_card">
+          <div class="featurde_book_img">
+            <img src="https://drive.google.com/uc?export=view&id=1bKZEKWm2cH2yFMtVgmdkY8nKsEctN4Z4" />
+          </div>
+
+          <div class="featurde_book_tag">
+            <h2>Zero to One</h2>
+            <p class="writer">Peter Thiel</p>
+            <div class="categories">Business</div>
+            <p class="book_price">
+              350<sub><del>449</del></sub>
+            </p>
+            <a href="https://amzn.eu/d/gnaXzuE#" class="f_btn">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="featured_book_card">
+          <div class="featurde_book_img">
+            <img src="https://drive.google.com/uc?export=view&id=1fTQujAa4s8EapkjEOnPZgg5zDavrC8A_"/>
+          </div>
+
+          <div class="featurde_book_tag">
+            <h2>The 5 Am Club</h2>
+            <p class="writer">Robin sharma</p>
+            <div class="categories">Self help, Business</div>
+            <p class="book_price">
+              181<sub><del>249</del></sub>
+            </p>
+            <a href="https://amzn.eu/d/78TcLgP" class="f_btn">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="featured_book_card">
+          <div class="featurde_book_img">
+            <img src="https://drive.google.com/uc?export=view&id=1WFUvKiUldWNmHotPQsora0dyHIfQYQA1"/>
+          </div>
+
+          <div class="featurde_book_tag">
+            <h2>Bhagavad Gita</h2>
+            <p class="writer">Swami Prabhupada</p>
+            <div class="categories">Spiritual</div>
+            <p class="book_price">
+              366<sub><del>699</del></sub>
+            </p>
+            <a href="https://amzn.eu/d/57pE7Gr" class="f_btn">Buy Now</a>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--Arrivals-->
+
+    <div class="arrivals" id="napage">
+      <h1>New Arrivals</h1>
+
+      <div class="arrivals_box">
+        <div class="arrivals_card">
+          <div class="arrivals_image">
+            <img src="https://drive.google.com/uc?export=view&id=1PiTn2ilCuh-DtmNaAhNPE6PWcefbxyRd" />
+          </div>
+          <div class="arrivals_tag">
+            <p>Hindus in hindu Rastra</p>
+            <div class="arrivals_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="https://amzn.eu/d/epPoUfU" class="arrivals_btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="arrivals_card">
+          <div class="arrivals_image">
+            <img src="https://drive.google.com/uc?export=view&id=1CuVvkBSILBbKp82EvfGqEBaYwp5Tx5Rs" />
+          </div>
+          <div class="arrivals_tag">
+            <p>POWER</p>
+            <div class="arrivals_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="https://amzn.eu/d/ewY7IAf" class="arrivals_btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="arrivals_card">
+          <div class="arrivals_image">
+            <img src="https://drive.google.com/uc?export=view&id=1H3JAb8lL_O8UpW0Z4S_mGy2I1y1tPoVj" />
+          </div>
+          <div class="arrivals_tag">
+            <p>Think Straight </p>
+            <div class="arrivals_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="#https://amzn.eu/d/5Tbfac7" class="arrivals_btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="arrivals_card">
+          <div class="arrivals_image">
+            <img src="https://drive.google.com/uc?export=view&id=1siOxK53ZdOuvyE3IzCy5mcoPCxEiuNbi" />
+          </div>
+          <div class="arrivals_tag">
+            <p>YOU CAN</p>
+            <div class="arrivals_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="https://amzn.eu/d/apahqt0" class="arrivals_btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="arrivals_card">
+          <div class="arrivals_image">
+            <img src="https://drive.google.com/uc?export=view&id=1OfKzJkemiVUFv-hMe8GptSaPAp6Iad-q" />
+          </div>
+          <div class="arrivals_tag">
+            <p>The Alchemists</p>
+            <div class="arrivals_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="https://amzn.eu/d/iRssiuD" class="arrivals_btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--reviews-->
+
+    <div class="reviews">
+      <h1>Reviews</h1>
+
+      <div class="review_box">
+        <div class="review_card">
+          <i class="fa-solid fa-quote-right"></i>
+          <div class="card_top">
+            <img src="https://drive.google.com/uc?export=view&id=1_hGbMb93EX0nN2ufheyjCZy8Ldwbh0S8" />
+          </div>
+          <div class="card">
+            <h2>Rohan Gouda</h2>
+            <p>
+                "I'm a hardcover aficionado, and Book Store has become my go-to 
+                source for beautifully bound books. The collection is impressive,
+                 and I appreciate the attention to detail in packaging and shipping. 
+                 My hardcovers always arrive in perfect condition."
+            </p>
+            <div class="review_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="review_card">
+          <i class="fa-solid fa-quote-right"></i>
+          <div class="card_top">
+            <img src="https://drive.google.com/uc?export=view&id=1_u9L7e-1Yp8-M7IQRN5MgTKVbqxLYQ4j" />
+          </div>
+          <div class="card">
+            <h2>Gangadhar G</h2>
+            <p>
+                "The hardcover selection at This Book Store is fantastic. 
+                My only suggestion is to add more classics to the collection. 
+                Nevertheless, the quality and service are outstanding, making 
+                it a reliable choice for hardcover enthusiasts like me."
+            </p>
+            <div class="review_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="review_card">
+          <i class="fa-solid fa-quote-right"></i>
+          <div class="card_top">
+            <img src="https://drive.google.com/uc?export=view&id=1_k0WEMzfs3uyqBAXIkkJTIxgKHgS4yhF" />
+          </div>
+          <div class="card">
+            <h2>Sneha kankanwadi</h2>
+            <p>
+                "Impressive variety of hardcovers, especially for niche genres.
+                 The packaging is secure. My only
+                  wish is for more signed editions to be available. Regardless,
+                   Book Store is the place to go for hardcover enthusiasts."
+            </p>
+            <div class="review_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="review_card">
+          <i class="fa-solid fa-quote-right"></i>
+          <div class="card_top">
+            <img src="https://drive.google.com/uc?export=view&id=1_zEyRPa0Mds5PP5Jc-yRAE4ALwb-T_2C" />
+          </div>
+          <div class="card">
+            <h2>Soumya Patil</h2>
+            <p>
+              "I'm thoroughly impressed with This Bookstore. 
+              Their extensive catalog caters to every taste, and the 
+              site's user-friendliness is exceptional. The only slight improvement could be a wider 
+              range of international literature. Regardless, it's a 
+              fantastic platform for book lovers."
+            </p>
+            <div class="review_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+
+    <footer>
+      <div class="footer_main">
+        <div class="tag">
+          <img src="https://drive.google.com/uc?export=view&id=1uv1ZksxS2R5JllFVlK4RJ0oBTuMYBO1j" />
+          <p>
+            Dear Readers,
+          </p>  
+            <p>
+            Thank you for choosing Our Bookstore. Your love for 
+            books fuels our passion. We're here to enrich your reading 
+            journey, one page at a time. Happy reading!
+          </p>
+        </div>
+
+        <div class="tag">
+          <h1>Quick Link</h1>
+          <a href="#homepage">Home</a>
+          <a href="#aboutpage">About</a>
+          <a href="#fdpage">Featured Books</a>
+          <a href="#napage">New Arrivals</a>
+        </div>
+
+        <div class="tag" id="contactpage">
+          <h1>Contact Info</h1>
+          <a href=""><i class="fa-solid fa-phone"></i>+94 12 345 6789</a>
+          <a href=""><i class="fa-solid fa-phone"></i>+94 32 444 699</a>
+          <a href=""
+            ><i class="fa-solid fa-envelope"></i>bookstore123@gmail.com</a
+          >
+        </div>
+
+
+        
+      </div>
+
+      <p class="end">
+        Design By<span><i class="fa-solid fa-face-grin"></i> Rahul Hindu </a></span>
+      </p>
+    </footer>
+  </body>
+</html>
